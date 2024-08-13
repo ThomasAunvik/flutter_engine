@@ -666,7 +666,7 @@ class PlatformViewRRectClip implements PlatformViewClip {
   ScenePath get toPath => (ui.Path() as ScenePath)..addRRect(rrect);
 
   @override
-  ui.Rect get boundingRect => throw UnimplementedError();
+  ui.Rect get boundingRect => rrect.safeInnerRect;
 
   @override
   bool covers(ui.Rect other) {
