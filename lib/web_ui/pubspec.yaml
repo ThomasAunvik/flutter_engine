@@ -1,4 +1,4 @@
-name: ui
+name: web_ui
 publish_to: none
 
 # Keep the SDK version range in sync with pubspecs under web_sdk
